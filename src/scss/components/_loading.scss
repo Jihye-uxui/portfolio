@@ -1,0 +1,17 @@
+// Loading gif
+
+@use '../base/variables' as *;
+@use '../utilities/functions' as *;
+@use '../utilities/mixins' as *;
+
+.loading-container {
+  width: 50%;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  transform: translateY(-50%);
+}

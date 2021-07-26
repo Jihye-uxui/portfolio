@@ -1,0 +1,30 @@
+// Project Overview Section
+
+@use '../base/variables' as *;
+@use '../utilities/functions' as *;
+@use '../utilities/mixins' as *;
+
+.work-hero {
+  position: relative;
+  text-align: center;
+
+  h1 {
+    @include textCenter;
+    color: $color-bg-white;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  @include mq($tablet) {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+
+  @include mq($desktop) {
+    h1 {
+      font-size: 9rem;
+      top: 45%;
+    }
+  }
+}

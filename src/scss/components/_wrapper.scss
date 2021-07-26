@@ -1,0 +1,12 @@
+// Wrapper
+
+@use '../base/variables' as *;
+@use '../utilities/mixins' as *;
+@use '../utilities/functions' as *;
+
+.wrapper {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+
+  @include mc();
+}

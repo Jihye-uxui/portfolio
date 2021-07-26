@@ -1,0 +1,28 @@
+// Type
+
+@use 'variables' as *;
+
+body {
+  font-family: $bodyFont;
+  color: $color-bg-dark;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $headingFont;
+  color: $color-primary-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.4;
+}

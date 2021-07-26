@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/frontend/static/css/main.882f40a4.chunk.css",
+    "main.js": "/frontend/static/js/main.88941a19.chunk.js",
+    "main.js.map": "/frontend/static/js/main.88941a19.chunk.js.map",
+    "runtime-main.js": "/frontend/static/js/runtime-main.076ce67a.js",
+    "runtime-main.js.map": "/frontend/static/js/runtime-main.076ce67a.js.map",
+    "static/js/2.24546ef0.chunk.js": "/frontend/static/js/2.24546ef0.chunk.js",
+    "static/js/2.24546ef0.chunk.js.map": "/frontend/static/js/2.24546ef0.chunk.js.map",
+    "index.html": "/frontend/index.html",
+    "static/css/main.882f40a4.chunk.css.map": "/frontend/static/css/main.882f40a4.chunk.css.map",
+    "static/js/2.24546ef0.chunk.js.LICENSE.txt": "/frontend/static/js/2.24546ef0.chunk.js.LICENSE.txt",
+    "static/media/jihyechoe-logo-circle.84bfaf46.png": "/frontend/static/media/jihyechoe-logo-circle.84bfaf46.png",
+    "static/media/jihyechoe-logo-s.d2ba0da6.svg": "/frontend/static/media/jihyechoe-logo-s.d2ba0da6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.076ce67a.js",
+    "static/js/2.24546ef0.chunk.js",
+    "static/css/main.882f40a4.chunk.css",
+    "static/js/main.88941a19.chunk.js"
+  ]
+}

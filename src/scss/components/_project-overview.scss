@@ -1,0 +1,139 @@
+// Project Overview Section
+
+@use '../base/variables' as *;
+@use '../utilities/functions' as *;
+@use '../utilities/mixins' as *;
+
+.page-work-info {
+  p,
+  li {
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-family: $bodyFont;
+    color: $color-bg-dark;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 20%;
+      border-bottom: 1.5px solid $color-primary-light;
+      margin-top: 1rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+  // decorative project keyword
+  .work-keyword {
+    text-align: center;
+    font-size: 3rem;
+    font-family: $headingFont;
+    color: rgba($color-primary-light, 0.5);
+
+    @include mq($desktop) {
+      font-size: 5rem;
+    }
+  }
+
+  .work-terms {
+    padding-top: 2rem;
+  }
+
+  h2 {
+    text-align: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0rem;
+    background-color: $color-bg-white;
+    padding: 2rem 0;
+    font-size: 2rem;
+    width: 100%;
+    color: rgba($color-neutral-light, 0.4);
+    @include mq($desktop) {
+      text-align: left;
+      padding: 1rem 0;
+      font-size: 2.5rem;
+    }
+  }
+
+  @include mq($desktop) {
+    .work-overview {
+      padding-top: 4rem;
+      max-width: 1000px;
+    }
+
+    .col-2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      align-content: flex-start;
+
+      p {
+        width: 70%;
+      }
+      .work-terms {
+        padding-top: 0;
+        width: auto;
+      }
+      .term-button-wrapper {
+        padding-left: 5rem;
+      }
+    }
+  }
+}
+
+// below the overview section (a big blob)
+.work-process {
+  padding-bottom: 5rem;
+
+  .wp-block-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+figcaption {
+  font-size: 0.9rem;
+}
+
+.work-process {
+  @include mq($desktop) {
+    p,
+    li {
+      padding-left: 20rem;
+      padding-top: -100px;
+    }
+    h3 {
+      margin-bottom: -10px;
+      &:after {
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.wp-block-buttons {
+  display: flex;
+  color: $color-primary-dark;
+  text-decoration: underline;
+  .wp-block-button {
+    padding: 2rem 2rem 0 0;
+    text-transform: capitalize;
+
+    a {
+      color: $color-accent;
+      font-weight: bold;
+
+      &:hover {
+        background-color: $color-bg-neutral;
+        transition: background-color 0.4 ease-in-out;
+      }
+    }
+  }
+  @include mq($desktop) {
+    padding-left: 20rem;
+  }
+}

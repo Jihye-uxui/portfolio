@@ -1,0 +1,11 @@
+// Body
+
+@use '../base/variables' as *;
+
+body {
+  background-color: $color-bg-white;
+}
+
+section {
+  height: 100vh;
+}

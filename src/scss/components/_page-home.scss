@@ -1,0 +1,45 @@
+// Buttons (a link)
+
+@use '../base/variables' as *;
+@use '../utilities/mixins' as *;
+
+.home-hero {
+  background-color: $color-bg-neutral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 350px;
+  }
+  @include mq($tablet) {
+    img {
+      max-width: 550px;
+    }
+  }
+}
+
+.home-intro {
+  background-color: $color-bg-neutral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  @include mq($tablet) {
+    h3 {
+      font-size: 4.5rem;
+    }
+  }
+
+  @include mq($desktop) {
+    h3 {
+      font-size: 6rem;
+    }
+  }
+}

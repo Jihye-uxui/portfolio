@@ -1,0 +1,69 @@
+// Mixins
+@use '../base/variables' as *;
+@use '../utilities/functions' as *;
+
+// Margin center...
+@mixin mc($set-tb: false, $t: 0, $b: 0) {
+  @if ($set-tb) {
+    margin: {
+      top: $t;
+      bottom: $b;
+      left: auto;
+      right: auto;
+    }
+  } @else {
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
+}
+
+@mixin flatten($is-list: false, $is-text: true) {
+  margin: 0;
+  padding: 0;
+  @if ($is-list: true) {
+    list-style: none;
+  }
+  @if ($is-text) {
+    line-height: 1;
+  }
+}
+
+// Center text on image/section container (position: relative)
+@mixin textCenter {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Media Queries
+@mixin mq($w) {
+  @media (min-width: em($w)) {
+    @content;
+  }
+}
+
+@mixin btn-hover {
+  transition: 0.4s ease-in-out;
+  background: rgb(199, 174, 127);
+  background: linear-gradient(
+    90deg,
+    rgba(199, 174, 127, 1) 16%,
+    rgba(174, 153, 112, 1) 48%,
+    rgba(136, 121, 90, 1) 100%
+  );
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@mixin shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@mixin desktop-text {
+  p {
+    line-height: 1.6;
+  }
+}

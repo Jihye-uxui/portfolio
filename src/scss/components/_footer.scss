@@ -1,0 +1,110 @@
+// Footer
+
+@use '../base/variables' as *;
+@use '../utilities/mixins' as *;
+
+footer {
+  background-color: $color-bg-dark;
+  padding: $section-padding;
+
+  .sns-icons {
+    display: flex;
+    padding: 1rem 0;
+
+    svg {
+      fill: $color-neutral-light;
+      width: 40px;
+      &:hover {
+        fill: $color-primary-light;
+      }
+    }
+  }
+
+  .footer-heading {
+    // display: flex;
+    // flex-direction: row;
+    padding: 3rem 0.5rem;
+
+    h4 {
+      color: $color-bg-light;
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+
+      @include mq($tablet) {
+        font-size: 4rem;
+        width: 50%;
+      }
+
+      @include mq($desktop) {
+        font-size: 4.5rem;
+        width: 70%;
+      }
+    }
+
+    p {
+      font-family: $headingFont;
+      font-size: 1.8rem;
+      font-style: italic;
+      color: $color-bg-neutral;
+      @include flatten;
+    }
+
+    em {
+      color: $color-primary-light;
+      text-decoration: line-through;
+      font-weight: 600;
+    }
+  }
+
+  p {
+    color: $color-neutral-light;
+  }
+
+  @include mq($tablet) {
+    .sns-icons {
+      // position: relative;
+      padding: 0;
+    }
+  }
+}
+
+// Footer 'Contact' Button
+.contact-btn {
+  font-family: $bodyFont;
+  font-weight: 300;
+  margin-left: auto;
+  // margin-top: 1.5rem;
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  line-height: 6;
+  border-radius: 50%;
+  text-align: center;
+  background-color: $color-primary-light;
+  color: $color-bg-white;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  &:hover {
+    @include btn-hover;
+    color: $color-bg-white;
+    cursor: pointer;
+  }
+
+  @include mq($tablet) {
+    width: 9rem;
+    height: 9rem;
+    line-height: 1;
+    vertical-align: middle;
+    border-radius: 50%;
+    text-align: center;
+    background-color: $color-primary-light;
+    color: $color-bg-white;
+  }
+}
+
+.copyright {
+  text-align: center;
+  margin: 0;
+}

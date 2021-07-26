@@ -1,0 +1,20 @@
+@use '../base/variables' as *;
+@use '../utilities/functions' as *;
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  animation: fadeIn 700ms ease-in-out 1s both;
+  cursor: pointer;
+
+  svg {
+    fill: $color-neutral-light;
+    &:focus,
+    &:active,
+    &:hover {
+      fill: $color-primary-light;
+      cursor: pointer;
+    }
+  }
+}

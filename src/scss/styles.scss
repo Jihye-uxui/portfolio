@@ -1,0 +1,41 @@
+// Imports
+
+// Resets
+@use './base/reset';
+@use './base/variables';
+@use './base/type';
+
+// Components
+@use './components/body';
+@use './components/wrapper';
+@use './components/header';
+@use './components/main-nav';
+@use './components/main';
+@use './components/footer';
+@use './components/loading';
+@use './components/scroll-to-top';
+@use './components/buttons';
+@use './components/animatedArrow';
+@use './components/circle-sketch-highlight';
+@use './components/marquee-effect';
+
+// Pages
+@use './components/page-home';
+@use './components/page-works';
+@use './components/about-hero';
+@use './components/about-section';
+
+// Sections of Work information page
+@use './components/project-hero';
+@use './components/project-overview';
+
+// Utilities
+@use './utilities/utility-classes';
+@use './utilities/functions';
+@use './utilities/mixins';
+
+// Web hosted Fonts
+// 1. Adobe Fonts - Heading
+@import url("https://use.typekit.net/ond1bqm.css");
+// // 2. Google Fonts - Body
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");

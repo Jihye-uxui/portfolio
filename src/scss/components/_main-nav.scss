@@ -1,0 +1,36 @@
+// Main Nav
+
+@use '../base/variables' as *;
+@use '../utilities/functions' as *;
+@use '../utilities/mixins' as *;
+
+.main-nav {
+  padding: 1rem;
+
+  li {
+    list-style: none;
+  }
+  a {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    color: $color-primary-light;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+      color: $color-primary-dark;
+      transition: 0.5s ease-in-out;
+    }
+  }
+
+  @include mq($desktop) {
+    padding: 2rem;
+    a {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+  }
+}
